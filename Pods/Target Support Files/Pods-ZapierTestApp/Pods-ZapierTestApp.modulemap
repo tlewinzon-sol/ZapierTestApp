@@ -1,0 +1,6 @@
+framework module Pods_ZapierTestApp {
+  umbrella header "Pods-ZapierTestApp-umbrella.h"
+
+  export *
+  module * { export * }
+}
