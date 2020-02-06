@@ -8,5 +8,6 @@ target 'ZapierTestApp' do
   # Pods for ZapierTestApp
 
 	pod 'Alamofire'
+	pod 'FirebaseDatabase'
 
 end

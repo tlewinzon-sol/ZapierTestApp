@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class ViewController: UIViewController {
 
@@ -22,6 +23,34 @@ class ViewController: UIViewController {
 
     @IBAction func saveButton(_ sender: Any) {
     }
+
+}
+
+struct Person {
+    var name: String
+    var surname: String
+    var age: Int
     
+    init(name: String, surname: String, age: Int) {
+        self.name = name
+        self.surname = surname
+        self.age = age
+    }
+    
+    init(dictonary: [String : AnyObject]) {
+        name = dictonary["name"] as? String ?? "No name"
+        surname = dictonary["surname"] as? String ?? "No surname"
+        age = dictonary["age"] as? Int ?? 0
+    }
+    
+    func convertToDictonary() -> [String : AnyObject] {
+        return ["name" : name, "surname" : surname, "age" : age] as [String : AnyObject]
+    }
+}
+
+class Service {
+    func uploadI() {
+        
+    }
 }
 

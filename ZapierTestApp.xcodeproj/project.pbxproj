@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,7 @@
 		7EF6B1C223EC55360059D872 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EF6B1C023EC55360059D872 /* Main.storyboard */; };
 		7EF6B1C423EC553F0059D872 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EF6B1C323EC553F0059D872 /* Assets.xcassets */; };
 		7EF6B1C723EC553F0059D872 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EF6B1C523EC553F0059D872 /* LaunchScreen.storyboard */; };
+		7EF6B1CF23EC7BCA0059D872 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7EF6B1CE23EC7BCA0059D872 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		7EF6B1C323EC553F0059D872 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7EF6B1C623EC553F0059D872 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7EF6B1C823EC553F0059D872 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7EF6B1CE23EC7BCA0059D872 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		99D95F8687B6316D67AC4F69 /* Pods-ZapierTestApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZapierTestApp.release.xcconfig"; path = "Target Support Files/Pods-ZapierTestApp/Pods-ZapierTestApp.release.xcconfig"; sourceTree = "<group>"; };
 		FA8B3C51EE64385CFAA4A324 /* Pods_ZapierTestApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZapierTestApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -56,7 +58,6 @@
 				059016BC3C354479EC9436E0 /* Pods-ZapierTestApp.debug.xcconfig */,
 				99D95F8687B6316D67AC4F69 /* Pods-ZapierTestApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -81,6 +82,7 @@
 		7EF6B1B923EC55360059D872 /* ZapierTestApp */ = {
 			isa = PBXGroup;
 			children = (
+				7EF6B1CE23EC7BCA0059D872 /* GoogleService-Info.plist */,
 				7EF6B1BA23EC55360059D872 /* AppDelegate.swift */,
 				7EF6B1BC23EC55360059D872 /* SceneDelegate.swift */,
 				7EF6B1BE23EC55360059D872 /* ViewController.swift */,
@@ -153,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7EF6B1C723EC553F0059D872 /* LaunchScreen.storyboard in Resources */,
+				7EF6B1CF23EC7BCA0059D872 /* GoogleService-Info.plist in Resources */,
 				7EF6B1C423EC553F0059D872 /* Assets.xcassets in Resources */,
 				7EF6B1C223EC55360059D872 /* Main.storyboard in Resources */,
 			);
