@@ -8,6 +8,7 @@
 
 import UIKit
 import Alamofire
+import FirebaseDatabase
 
 class ViewController: UIViewController {
 
@@ -28,29 +29,45 @@ class ViewController: UIViewController {
 
 struct Person {
     var name: String
+    var dni: String
     var surname: String
     var age: Int
     
-    init(name: String, surname: String, age: Int) {
+    init(name: String, surname: String, age: Int, dni: String) {
         self.name = name
         self.surname = surname
         self.age = age
+        self.dni = dni
     }
     
     init(dictonary: [String : AnyObject]) {
         name = dictonary["name"] as? String ?? "No name"
         surname = dictonary["surname"] as? String ?? "No surname"
         age = dictonary["age"] as? Int ?? 0
+        dni = dictonary["dni"] as? String ?? "XX.XXX.XXX"
     }
     
     func convertToDictonary() -> [String : AnyObject] {
-        return ["name" : name, "surname" : surname, "age" : age] as [String : AnyObject]
+        return ["name" : name, "surname" : surname, "age" : age, "dni" : dni] as [String : AnyObject]
     }
 }
 
 class Service {
-    func uploadI() {
-        
+    func upload(person: Person) {
+        let refDatabase = Database.database().reference()
+        refDatabase.child(person.dni).setValue(person.convertToDictonary())
+    }
+    
+    func download(id: String, completion: @escaping ((Person?) -> Void)) {
+        let refDatabase = Database.database().reference()
+        var theResult: Person?
+        refDatabase.child(id).observe(.value) { (DataSnapshot) in
+            if let data = DataSnapshot.value as? [String : AnyObject] {
+                let person = Person(dictonary: data)
+                theResult = person
+            }
+            completion(theResult)
+        }
     }
 }
 

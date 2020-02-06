@@ -15,6 +15,7 @@
 		7EF6B1C423EC553F0059D872 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EF6B1C323EC553F0059D872 /* Assets.xcassets */; };
 		7EF6B1C723EC553F0059D872 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EF6B1C523EC553F0059D872 /* LaunchScreen.storyboard */; };
 		7EF6B1CF23EC7BCA0059D872 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7EF6B1CE23EC7BCA0059D872 /* GoogleService-Info.plist */; };
+		7EF6B1D123EC8B870059D872 /* DniViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF6B1D023EC8B870059D872 /* DniViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		7EF6B1C623EC553F0059D872 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7EF6B1C823EC553F0059D872 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7EF6B1CE23EC7BCA0059D872 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7EF6B1D023EC8B870059D872 /* DniViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DniViewController.swift; sourceTree = "<group>"; };
 		99D95F8687B6316D67AC4F69 /* Pods-ZapierTestApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZapierTestApp.release.xcconfig"; path = "Target Support Files/Pods-ZapierTestApp/Pods-ZapierTestApp.release.xcconfig"; sourceTree = "<group>"; };
 		FA8B3C51EE64385CFAA4A324 /* Pods_ZapierTestApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZapierTestApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -90,6 +92,7 @@
 				7EF6B1C323EC553F0059D872 /* Assets.xcassets */,
 				7EF6B1C523EC553F0059D872 /* LaunchScreen.storyboard */,
 				7EF6B1C823EC553F0059D872 /* Info.plist */,
+				7EF6B1D023EC8B870059D872 /* DniViewController.swift */,
 			);
 			path = ZapierTestApp;
 			sourceTree = "<group>";
@@ -210,6 +213,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EF6B1D123EC8B870059D872 /* DniViewController.swift in Sources */,
 				7EF6B1BF23EC55360059D872 /* ViewController.swift in Sources */,
 				7EF6B1BB23EC55360059D872 /* AppDelegate.swift in Sources */,
 				7EF6B1BD23EC55360059D872 /* SceneDelegate.swift in Sources */,
