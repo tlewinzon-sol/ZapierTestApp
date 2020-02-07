@@ -41,6 +41,7 @@
                     </view>
                     <connections>
                         <outlet property="dniTextField" destination="FPs-Jv-9rE" id="aBz-bq-Bog"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="segue" id="P2R-gZ-F3K"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pF6-b3-yvB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -50,7 +51,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ZapierTestApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="ViewController" customModule="ZapierTestApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -82,20 +83,39 @@
                                     <action selector="saveButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="69o-N1-MUh"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NQv-VE-EUL">
+                                <rect key="frame" x="186" y="90" width="42" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9sW-eY-jRj">
+                                <rect key="frame" x="190" y="670" width="34" height="30"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="backButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="p3D-kf-wET"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="XJ5-0g-B1V" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="7U7-cn-6Pm"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XJ5-0g-B1V" secondAttribute="trailing" constant="40" id="Ik2-Tn-oer"/>
+                            <constraint firstItem="NQv-VE-EUL" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="JDg-EC-YFK"/>
                             <constraint firstItem="XJ5-0g-B1V" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="RLM-qO-Pjq"/>
                             <constraint firstItem="AjN-vW-JId" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="T02-k5-Zhm"/>
                             <constraint firstItem="XJ5-0g-B1V" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="Uhl-R1-J5m"/>
+                            <constraint firstItem="9sW-eY-jRj" firstAttribute="top" secondItem="AjN-vW-JId" secondAttribute="bottom" constant="40" id="bdt-TY-C6P"/>
+                            <constraint firstItem="9sW-eY-jRj" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="eDr-1V-LZM"/>
+                            <constraint firstItem="NQv-VE-EUL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="46" id="gyr-Tu-VkW"/>
                             <constraint firstItem="AjN-vW-JId" firstAttribute="top" secondItem="XJ5-0g-B1V" secondAttribute="bottom" constant="300" id="w2l-AK-45j"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="3FT-ou-NoU"/>
                     <connections>
                         <outlet property="ageTextField" destination="MOp-AD-ewc" id="n5q-9N-Zbf"/>
+                        <outlet property="dniLabel" destination="NQv-VE-EUL" id="VrQ-Ln-VfG"/>
                         <outlet property="nameTextField" destination="9Nf-0M-bmt" id="Yyl-SY-3HG"/>
                         <outlet property="surnameTextField" destination="rhv-hW-GMW" id="5b9-dy-r61"/>
                     </connections>
