@@ -109,6 +109,7 @@
 				7EF6B1B423EC55360059D872 /* Frameworks */,
 				7EF6B1B523EC55360059D872 /* Resources */,
 				BE15109D5AD221D8F6049F79 /* [CP] Embed Pods Frameworks */,
+				F500C56EB42A226ED30BC3BB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -204,6 +205,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZapierTestApp/Pods-ZapierTestApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F500C56EB42A226ED30BC3BB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZapierTestApp/Pods-ZapierTestApp-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZapierTestApp/Pods-ZapierTestApp-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZapierTestApp/Pods-ZapierTestApp-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

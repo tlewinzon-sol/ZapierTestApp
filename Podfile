@@ -9,5 +9,6 @@ target 'ZapierTestApp' do
 
 	pod 'Alamofire'
 	pod 'FirebaseDatabase'
+	pod 'GoogleSignIn'
 
 end
